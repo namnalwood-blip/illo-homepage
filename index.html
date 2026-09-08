@@ -597,7 +597,7 @@
       },
       defaultOption:'maru',
       costModel:{
-        kind:'floor', materialPricePerPyeong: 7.62, lossRate: 0.10, laborRate: 20,
+        kind:'floor', materialPricePerPyeong: 6.503232, lossRate: 0.10, laborRate: 20, /* 자재단가 보정: 84㎡·확장형·강마루 기준 총액 2,825,000원 */
         workersByArea: flatArea(2),
         adhesive: { canPrice: 7.5, coveragePyeongPerCan: 4 },
         delivery: 0
@@ -613,8 +613,8 @@
       } },
     { key:'kitchen', name:'주방', priceMode:'normal', scalesByArea:true,
       note:'',
-      shared:{ desc:'2800mm 상부장·하부장 + 냉장고장 — 미드타일 400×800, 인조대리석 상판, 거위목 수전, 사각 싱크볼, PET 도어, 3구 인덕션' },
-      byArea: flatArea(295 + 30) },
+      shared:{ desc:'2600mm 상부장·하부장 — 미드타일 400×800, 인조대리석 상판, 거위목 수전, 사각 싱크볼, PET 도어, 하츠후드' },
+      byArea: flatArea(292) },
     { key:'furniture', name:'가구', priceMode:'normal', scalesByArea:true,
       note:'',
       shared:{ desc:'주문가구 — 붙박이장 · 신발장' },
