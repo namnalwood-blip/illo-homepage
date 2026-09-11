@@ -139,9 +139,12 @@
   .scope-badge{
     font-size:13px; font-weight:700; letter-spacing:.02em; color:var(--ink-soft);
     background:var(--surface-2); border:1px solid var(--line); border-radius:999px;
-    padding:9px 20px; white-space:nowrap;
+    padding:9px 20px; white-space:nowrap; text-decoration:none; cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
   }
+  .scope-badge:hover{ background:var(--surface-3); transform:translateY(-1px); box-shadow:var(--shadow); }
   .scope-badge.accent{ color:var(--accent-ink); background:var(--accent-strong); border-color:var(--accent-strong); }
+  .scope-badge.accent:hover{ background:var(--good); }
   @media (max-width:600px){ .scope-badge{ font-size:12px; padding:8px 14px; } }
 
   /* ---------- 섹션 공통 ---------- */
@@ -334,9 +337,9 @@
 
 <div class="value-strip">
   <div class="value-strip-inner">
-    <span class="scope-badge">아파트 인테리어</span>
-    <span class="scope-badge">상업공간 인테리어</span>
-    <span class="scope-badge accent">지식산업센터 오피스인테리어</span>
+    <a class="scope-badge" href="portfolio/apartment.html">아파트 인테리어</a>
+    <a class="scope-badge" href="portfolio/commercial.html">상업공간 인테리어</a>
+    <a class="scope-badge accent" href="portfolio/office.html">지식산업센터 오피스인테리어</a>
   </div>
 </div>
 
